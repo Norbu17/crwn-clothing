@@ -4,7 +4,6 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 25px;
-    border: 1px solid red;
 
     .logo-container {
         height: 100%;
@@ -13,11 +12,13 @@
     }
 
     .nav-links-container {
+        
         width: 50%;
         height: 100%;
         display: flex;
         align-items: center;
         justify-content: flex-end;
+
 
         .nav-link {
             padding: 10px 15px;
