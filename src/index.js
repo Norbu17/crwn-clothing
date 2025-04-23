@@ -5,13 +5,16 @@ import App from "./App";
 import "./index.scss";
 import reportWebVitals from "./reportWebVitals";
 import { UserProvider } from "./components/contexts/user.context";
+import { ProductsProvider } from "./components/contexts/product.context";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <>
     <BrowserRouter>
       <UserProvider>
-        <App />
+        <ProductsProvider>
+          <App />
+        </ProductsProvider>
       </UserProvider>
     </BrowserRouter>
   </>
